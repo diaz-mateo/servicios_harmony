@@ -1,0 +1,199 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E2DAD6;
+    color: #0B0F3C;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Evita barras horizontales */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0B0F3C;
+    color: white;
+    padding: 40px 20px; /* Aumenté el espaciado en el header */
+    text-align: center;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 50px; /* Espacio adicional debajo del header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle más profundidad */
+}
+
+header h1 {
+    margin: 0 0 30px 0; /* Espaciado inferior para separar del menú */
+    font-size: 3rem; /* Tamaño más grande para destacar */
+    line-height: 1.2; /* Mejora la legibilidad */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Más espacio entre los elementos del menú */
+    margin-top: 40px; /* Añadí margen superior para separar el menú del texto */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem; /* Tamaño ligeramente mayor para mejor lectura */
+    padding: 12px 20px; /* Más espacio dentro de los enlaces */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #1A224D;
+    transform: scale(1.05); /* Efecto de hover más dinámico */
+}
+
+/* Main Sections */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    gap: 50px; /* Más espacio entre secciones */
+}
+
+/* Separar el título de las secciones */
+section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 50px;
+    width: calc(100% - 60px);
+    max-width: 1200px;
+    margin-top: 40px; /* Añadir espacio superior */
+}
+
+/* Ajusta el espaciado para los títulos */
+h2 {
+    color: #0B0F3C;
+    margin-bottom: 30px; /* Espaciado debajo del título */
+}
+
+/* Ajustar el espaciado debajo del texto "Selecciona los servicios..." */
+.service-section {
+    margin-top: 30px; /* Agregar más espacio arriba de esta sección */
+}
+
+/* Servicios */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px; /* Agregar espacio superior */
+}
+
+.service-card {
+    background: #E2DAD6;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: calc(30% - 30px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    color: #0B0F3C;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin: 10px 0; /* Espaciado para descripciones y precios */
+    font-size: 1.1rem;
+}
+
+.service-card button {
+    background-color: #0B0F3C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.service-card button:hover {
+    background-color: #1A224D;
+    transform: scale(1.05);
+}
+
+/* Cart */
+.cart-container {
+    background: #E2DAD6;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#cartTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#cartTable th,
+#cartTable td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    color: #0B0F3C;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #0B0F3C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 30px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony Psicoterapia - Carrito de Servicios</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Harmony Psicoterapia</h1>
+        <p>Cuidando tu bienestar mental, un servicio a la vez</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#servicesSection">Servicios</a></li>
+                <li><a href="#cartSection">Carrito</a></li>
+                <li><a href="#aboutUs">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Servicios -->
+        <section id="servicesSection">
+            <h2>Servicios Disponibles</h2>
+            <p>Selecciona los servicios que desees agregar al carrito.</p>
+            <div class="services-container" id="servicesContainer">
+                <!-- Se generarán dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Carrito -->
+        <section id="cartSection">
+            <h2>Carrito de Servicios</h2>
+            <div class="cart-container">
+                <table id="cartTable">
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Subtotal</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="emptyCartRow">
+                            <td colspan="5">Tu carrito está vacío.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-summary">
+                    <p><strong>Total:</strong> S/ <span id="totalAmount">0.00</span></p>
+                    <button id="checkoutButton" disabled>Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section id="aboutUs">
+            <h2>Sobre Nosotros</h2>
+            <p>En Harmony Psicoterapia ofrecemos servicios diseñados para tu bienestar mental. Nuestro equipo está comprometido en brindarte herramientas que te ayuden a vivir una vida plena y saludable.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Harmony Psicoterapia &copy; 2025 - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
