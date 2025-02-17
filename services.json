@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Mindfulness",
+        "descripcion": "Atención Plena con interés, curiosidad y aceptación.",
+        "precio": 50
+    },
+    {
+        "nombre": "Terapia ACT",
+        "descripcion": "Modelo de psicoterapia respaldado científicamente.",
+        "precio": 80
+    },
+    {
+        "nombre": "Terapia EMDR",
+        "descripcion": "Método de psicoterapia para traumas y salud mental.",
+        "precio": 100
+    },
+    {
+        "nombre": "Psicología",
+        "descripcion": "Estudio de la mente y el comportamiento.",
+        "precio": 70
+    },
+    {
+        "nombre": "Hipnoterapia",
+        "descripcion": "Herramienta poderosa para mejorar el bienestar.",
+        "precio": 90
+    },
+    {
+        "nombre": "Psicoterapia",
+        "descripcion": "Tratamiento basado en el diálogo.",
+        "precio": 60
+    }
+]
